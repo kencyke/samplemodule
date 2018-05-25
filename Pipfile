@@ -1,0 +1,26 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+
+[dev-packages]
+ipython = "*"
+pytest = "*"
+"autopep8" = "*"
+isort = "*"
+tox = "*"
+detox = "*"
+pytest-cov = "*"
+codecov = "*"
+pytest-xdist = "*"
+twine = "*"
+wheel = "*"
+
+[requires]
+python_version = "3.5"
+
+[scripts]
+sort = "isort --recursive setup.py sample tests"
+fix = "autopep8 --in-place --recursive --verbose --aggressive --aggressive setup.py sample tests"
