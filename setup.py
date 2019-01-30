@@ -4,8 +4,6 @@ from setuptools import find_packages, setup
 
 here = os.path.abspath(os.path.dirname(__file__))
 
-test_requires = ['pytest', 'pytest-cov', 'pytest-xdist']
-
 about = {}
 with open(os.path.join(here, 'sample', '__version__.py'), 'r') as f:
     exec(f.read(), about)
@@ -27,8 +25,7 @@ setup(
     long_description_content_type='text/markdown',
     url='https://github.com/kencyke/samplepmodule',
     license=license_,
-    author='Keisuke Suzuki',
+    author='kencyke',
     packages=find_packages(exclude=['tests', 'dist']),
-    python_requires=">=3.5",
-    tests_require=test_requires,
+    python_requires=">=3.6"
 )
