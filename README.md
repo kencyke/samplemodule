@@ -1,16 +1,31 @@
 # Sample Python Module
-This simple module is an example repository for Python 3.5+ projects.
+
+This simple module is an example repository for Python 3.6+ projects.
+
+Requirements:
+
+* [pypa/pipenv](https://github.com/pypa/pipenv)
+* [make](https://www.gnu.org/software/make/manual/)
+
+To generate `requirements.txt` from `Pipfile`, run the following command:
+```bash
+pipenv lock -r | awk '{if(NR>1)print}' > requirements.txt
+```
 
 ## Other Development Tools
-The libraries listed below are not used in this module but recommended for more sophisticated use.
 
-### Formatter
-* [google/yapf](https://github.com/google/yapf) (Python 2.7 or 3.6.4+)
-* [ambv/black](https://github.com/ambv/black) (Python 3.6)
+The libraries listed below are not used in this module but recommended for sophistication.
 
-### Linter
+Formatter:
+
+* [google/yapf](https://github.com/google/yapf)
+* [ambv/black](https://github.com/ambv/black)
+
+Linter:
+
 * [PyCQA/pylint](https://github.com/PyCQA/pylint)
-* [python/mypy](https://github.com/python/mypy) (Python 3.4+)
+* [python/mypy](https://github.com/python/mypy)
 
-### Document Generator
+Document Generator:
+
 * [sphinx-doc/sphinx](https://github.com/sphinx-doc/sphinx)
