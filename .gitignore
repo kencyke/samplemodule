@@ -1,1 +1,21 @@
+# packaging
+build/
+dist/
+eggs/
+sdist/
+wheels/
+*.egg-info/
+
+# test
+.tox/
+.coverage
+.coverage.*
+.cache
+coverage.xml
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints
+
+# IDE
 .idea/
