@@ -16,15 +16,19 @@ pipenv lock -r | awk '{if(NR>1)print}' > requirements.txt
 
 The libraries listed below are not used in this module but recommended for sophistication.
 
-Formatter:
+Formatter/Linter/Type Checker:
 
 * [google/yapf](https://github.com/google/yapf)
 * [ambv/black](https://github.com/ambv/black)
-
-Linter:
-
 * [PyCQA/pylint](https://github.com/PyCQA/pylint)
 * [python/mypy](https://github.com/python/mypy)
+* [Microsoft/pyright](https://github.com/Microsoft/pyright)
+* [google/pytype](https://github.com/google/pytype)
+* [facebook/pyre-check](https://github.com/facebook/pyre-check)
+
+Test Runner:
+
+* [facebookincubator/ptr](https://github.com/facebookincubator/ptr)
 
 Document Generator:
 
