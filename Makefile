@@ -3,7 +3,7 @@ init:
 	pipenv install --dev
 
 test:
-	pipenv run detox
+	pipenv run tox -p
 
 format:
 	pipenv run sort
