@@ -1,6 +1,10 @@
 init:
 	pip install pipenv --upgrade
-	pipenv install --dev
+	env PIPENV_VENV_IN_PROJECT=true pipenv install -de .
+
+update:
+	pipenv lock
+	pipenv sync -d
 
 test:
 	pipenv run tox -p
