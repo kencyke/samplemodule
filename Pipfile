@@ -16,6 +16,7 @@ codecov = "*"
 pytest-xdist = "*"
 twine = "*"
 wheel = "*"
+sample = {editable = true,path = "."}
 
 [requires]
 python_version = "3.6"
