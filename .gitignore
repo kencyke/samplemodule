@@ -21,4 +21,7 @@ coverage.xml
 .idea/
 
 # virtualenv
-.venv
+.venv/
+
+#vscode
+.vscode/
