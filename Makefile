@@ -1,6 +1,6 @@
 init:
 	pip install pipenv --upgrade
-	env PIPENV_VENV_IN_PROJECT=true pipenv install -de .
+	env PIPENV_VENV_IN_PROJECT=true pipenv install -d
 
 update:
 	pipenv lock
